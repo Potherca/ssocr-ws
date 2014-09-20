@@ -1,12 +1,5 @@
 # SSOCR-WS - Seven Segment Optical Character Recognition - Web Service
 
-[SSOCR] (which stands for Seven Segment Optical Character Recognition) was created 
-by [Erik Auerswald] under a [GPL3+] License to recognize digits of a [seven 
-segment display]. An image of one row of digits is used for input and the 
-recognized number is written to the standard output.
-
-This repository offers the functionality that program as a web service.
-
 [![Project Stage Badge: Experimental]][Project Stage Page]
 [![Codacy Badge]][Codacy Page]
 [![License Badge]][GPL3+]
@@ -16,11 +9,34 @@ This repository offers the functionality that program as a web service.
 [![Version Badge]][Releases Page]
 -->
 
+[SSOCR] (which stands for Seven Segment Optical Character Recognition) was created 
+by [Erik Auerswald] under a [GPL3+] License to recognize digits of a [seven 
+segment display]. An image of one row of digits is used for input and the 
+recognized number is written to the standard output.
 
----
+This repository offers the functionality that program as a web service.
+
+## Requirements
+
+This project uses the Silex framework, the Symfony Process component and the 
+Composer autoloader. These can be installed by running `composer install` from
+the project root. More information on this can be found in the [Composer manual 
+"basic usage" section].
+
+Obviously `ssocr` is also needed. For Linux systems that can be installed with 
+the following commands (use your personal flavours at your own descretion):
+
+    sudo apt-get install libimlib2-dev
+    wget --progress=bar 'http://www.unix-ag.uni-kl.de/~auerswal/ssocr/ssocr-2.16.0.tar.bz2'
+    tar -xjvf 'ssocr-2.16.0.tar.bz2'
+    cd 'ssocr-2.16.0'
+    make
+    make install
+
 
 <!-- Live version running on heroku: http://ssocr.herokuapp.com/ -->
 
+[Composer manual "basic usage" section]: https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies
 [SSOCR]: http://www.unix-ag.uni-kl.de/~auerswal/ssocr/
 [seven segment display]: https://en.wikipedia.org/wiki/Seven-segment_display
 [Erik Auerswald]: https://github.com/auerswal/
