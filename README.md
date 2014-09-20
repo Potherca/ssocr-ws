@@ -7,11 +7,6 @@ recognized number is written to the standard output.
 
 This repository offers the functionality that program as a web service.
 
-SSOCR]: http://www.unix-ag.uni-kl.de/~auerswal/ssocr/
-[seven segment display]: https://en.wikipedia.org/wiki/Seven-segment_display
-[Erik Auerswald] https://github.com/auerswal/
-
-
 [![Project Stage Badge: Experimental]][Project Stage Page]
 [![Codacy Badge]][Codacy Page]
 [![License Badge]][GPL3+]
@@ -25,6 +20,10 @@ SSOCR]: http://www.unix-ag.uni-kl.de/~auerswal/ssocr/
 ---
 
 <!-- Live version running on heroku: http://ssocr.herokuapp.com/ -->
+
+[SSOCR]: http://www.unix-ag.uni-kl.de/~auerswal/ssocr/
+[seven segment display]: https://en.wikipedia.org/wiki/Seven-segment_display
+[Erik Auerswald]: https://github.com/auerswal/
 
 [Project Stage Page]: http://bl.ocks.org/potherca/a2ae67caa3863a299ba0
 [Releases Page]: /releases/
