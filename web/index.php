@@ -56,7 +56,7 @@ function parseImage ($p_sImagePath)
 {
     $sImagePath = $p_sImagePath;
 
-    $sDebugImageFolder = $sImageFolder = __DIR__ . '/uploads/';
+    $sDebugImageFolder = __DIR__ . '/uploads/';
 
     $aParseCommands = array('remove_isolated', 'invert');
     $sThreshold = '95';
@@ -78,9 +78,9 @@ function parseImage ($p_sImagePath)
     array_push($aArguments, $sImagePath);
             
     $oProcess = $oBuilder->setArguments($aArguments)->getProcess();
-    $sCommand = $oProcess->getCommandLine();
+    //$sCommand = $oProcess->getCommandLine();
 
-    $iResult = $oProcess->run();
+    $oProcess->run();
     if ($oProcess->isSuccessful() === true) {
         $sOutput = $oProcess->getOutput();
     } else {
