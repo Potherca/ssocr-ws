@@ -12,78 +12,9 @@ require '../vendor/autoload.php';
 $debug = true;
 
 $app = new Application(array('debug'=>$debug));
+
 $app->get('/', function (Request $p_oRequest) use ($app){
-    return <<<HTML
-<!DOCTYPE html>
-<html>
-<head profile="http://microformats.org/profile/rel-license">
-    <meta charset="utf-8"/>
-    <title>Seven Segment Optical Character Recognition - Web Service</title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.2.2/css/foundation.min.css"/>
-    <link rel="stylesheet" href="http://pother.ca/CssBase/css/created-by-potherca.css"/>
-    <style>
-        .file {
-            margin: 1em 40%;
-        }
-        .file label {
-            color: rgb(255,255,255);
-            height: 100%;
-            width: 100%;
-        }
-
-        .file input {
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          opacity: 0.01;
-          cursor: pointer;
-        }
-    </style>
-</head>
-<body class="text-center">
-    <header>
-        <h1>
-            <a href="./">SSOCR-WS</a>
-            <small>Seven Segment Optical Character Recognition - Web Service</small>
-        </h1>
-    </header>
-    
-    
-    <form action="" method="post" enctype="multipart/form-data">
-       <p class="panel callout radius">
-            The uploaded image will be parsed and the found number will be returned.
-        </p>
-         <fieldset>
-            <legend>File Upload</legend>
-            <p class="file button radius">
-                <input type="file" name="file" id="file" accept="image/*" placeholder="Select an image to upload"/>
-                <label for="file" id="file-label">Select an image to upload</label>
-            </p>
-
-            <button type="submit" class="radius">Upload!</button>
-        </fieldset>
-   </form>  
-    
-    <p  class="panel radius">Fetching the result could take some time. Please be patient.</p>
-    <hr/>
-
-    <footer class="text-right">
-        <span class="version">0.0.0</span>
-        &ndash;
-        The Source Code for this project is <a href="https://github.com/potherca/ssocr-ws">available on github.com</a> under a <a href="https://www.gnu.org/licenses/gpl.html" rel="license">GPLv3 License</a>
-        &ndash;
-        <a href="http://pother.ca/" class="created-by">Created by <span class="potherca">Potherca</span></a>
-    </footer>
-    <script>
-        document.getElementById('file').onchange = function () {
-            document.getElementById('file-label').innerHTML = this.value.split(/[\\\\/]/).pop();
-        };
-    </script>
-</body>
-</html>
-HTML;
+    return file_get_contents('../templates/index.html');
 });
 
 $app->post('/', function (Request $p_oRequest) use ($app){
