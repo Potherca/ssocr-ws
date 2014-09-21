@@ -21,7 +21,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Potherca\\": "src/"
+            "Potherca\\SevenSegmentOcrWebService\\": "src/",
+            "Potherca\\Silex\\": "src/"
         }
     }
 }
