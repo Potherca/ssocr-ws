@@ -47,7 +47,7 @@ the following commands (use your personal flavours at your own descretion):
 [GPL3+]: LICENSE
 
 [Build Status Badge]: http://img.shields.io/codeship/???.svg
-[Codacy Badge]: https://www.codacy.com/project/badge/???
+[Codacy Badge]: https://www.codacy.com/project/badge/3c57f48168a9410183fc82c33c103513
 [License Badge]: https://img.shields.io/badge/License-GPL3%2B-lightgray.svg
 [Project Stage Badge: Experimental]: http://img.shields.io/badge/Project%20Stage-Experimental-yellow.svg
 [Version Badge]: http://img.shields.io/github/tag/potherca/ssocr-ws
