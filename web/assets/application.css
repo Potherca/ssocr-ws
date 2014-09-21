@@ -1,0 +1,31 @@
+.file {
+    margin: 1em 40%;
+}
+.active {
+    box-shadow: 0 0 0 0.1em rgb(255, 255, 255)
+    , 0 0 0 0.2em rgb(0, 140, 186)
+;
+}
+
+.active:hover {
+    box-shadow: 0 0 0 0.1em rgb(255, 255, 255)
+    , 0 0 0 0.2em rgb(0, 112, 149)
+;
+}
+.file label {
+    color: rgb(255,255,255);
+    height: 100%;
+    width: 100%;
+}
+
+.file input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.01;
+    cursor: pointer;
+}
+
+/*EOF*/
