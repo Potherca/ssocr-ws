@@ -24,7 +24,7 @@ the project root. More information on this can be found in the [Composer manual
 "basic usage" section].
 
 Obviously `ssocr` is also needed. For Linux systems that can be installed with 
-the following commands (use your personal flavours at your own descretion):
+the following commands (use your personal flavours at your own discretion):
 
     sudo apt-get install libimlib2-dev
     wget --progress=bar 'http://www.unix-ag.uni-kl.de/~auerswal/ssocr/ssocr-2.16.0.tar.bz2'
