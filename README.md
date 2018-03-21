@@ -3,28 +3,28 @@
 [![Project Stage Badge: Experimental]][Project Stage Page]
 [![Codacy Badge]][Codacy Page]
 [![License Badge]][GPL3+]
-<!-- 
-@TODO: 
+<!--
+@TODO:
 [![Build Status Badge]][Project Codeship Page]
 [![Version Badge]][Releases Page]
 -->
 
-[SSOCR] (which stands for Seven Segment Optical Character Recognition) was created 
-by [Erik Auerswald] under a [GPL3+] License to recognize digits of a [seven 
-segment display]. An image of one row of digits is used for input and the 
+[SSOCR] (which stands for Seven Segment Optical Character Recognition) was created
+by [Erik Auerswald] under a [GPL3+] License to recognize digits of a [seven
+segment display]. An image of one row of digits is used for input and the
 recognized number is written to the standard output.
 
 This repository offers the functionality that program as a web service.
 
 ## Requirements
 
-This project uses the Silex framework, the Symfony Process component and the 
+This project uses the Silex framework, the Symfony Process component and the
 Composer autoloader. These can be installed by running `composer install` from
-the project root. More information on this can be found in the [Composer manual 
+the project root. More information on this can be found in the [Composer manual
 "basic usage" section].
 
-Obviously `ssocr` is also needed. For Linux systems that can be installed with 
-the following commands (use your personal flavours at your own descretion):
+Obviously `ssocr` is also needed. For Linux systems that can be installed with
+the following commands (use your personal flavours at your own discretion):
 
     sudo apt-get install libimlib2-dev
     wget --progress=bar 'http://www.unix-ag.uni-kl.de/~auerswal/ssocr/ssocr-2.16.0.tar.bz2'
